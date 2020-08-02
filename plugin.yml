@@ -1,0 +1,8 @@
+main: me.Daniel.CrossbowGunPlugin.CrossbowGun
+name: Plugin_CrossbowGun
+version: 1.1
+author: Daniel
+api-version: 1.16
+
+commands:
+  hello:
