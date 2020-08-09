@@ -13,15 +13,29 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.util.Vector;
 
+/**
+ * Class that handles the bullet firing of the gun 
+ * @author Daniel / Haocheng Li
+ * @since 2020-8-8
+ * */
 public class FireBullet implements Listener {
 
+	// private variable connecting back to the main class
 	private static CrossbowGun plugin;
 	
+	/*
+	 * Constructor for the class
+	 * @param a CrossbowGun object
+	 * */
 	public FireBullet(CrossbowGun plugin) {
 		this.plugin = plugin;
 		Bukkit.getPluginManager().registerEvents(this,plugin);
 	}
 	
+	/*
+	 * Method that handles the firing of a bullet upon player's actions
+	 * @param the event of a player clicking with his/her mouse
+	 * */
 	@EventHandler
 	public void fireBullet(PlayerInteractEvent event) {
 

@@ -20,7 +20,11 @@ import org.bukkit.util.Vector;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.ProjectileHitEvent;
 
-
+/**
+ * Main class extending from JavaPlugin that connects all the functionalities together
+ * @author Daniel / Haocheng Li
+ * @since 2020-8-8
+ * */
 public class CrossbowGun extends JavaPlugin implements Listener {
 
 	@Override
